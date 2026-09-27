@@ -326,6 +326,24 @@
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
     }
+        .charter-item {
+      border-top: 1px solid var(--border);
+    }
+
+    .charter-item summary {
+      padding: 16px 4px;
+      color: var(--burgundy);
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .charter-content {
+      padding: 0 4px 18px;
+    }
+
+    .charter-content p {
+      margin: 0 0 12px;
+    }
   </style>
 </head>
 
@@ -414,126 +432,89 @@
   </div>
 </section>
     <section class="section" id="identity">
-      <div class="section-heading">
-        <span class="section-number">01 · Team Identity</span>
-        <h2>Meet the team.</h2>
-      </div>
+  <div class="section-heading">
+    <span class="section-number">Team Charter</span>
+    <h2>How we work together.</h2>
+  </div>
+
+  <div class="grid">
+    <article class="card wide">
+      <h3>01 · Team Identity</h3>
+      <h3>Meet the team.</h3>
+
       <div class="member-grid">
         <article class="member"><strong>Claire</strong></article>
         <article class="member"><strong>John</strong></article>
         <article class="member"><strong>Kevin</strong></article>
         <article class="member"><strong>Karen</strong></article>
       </div>
-    </section>
 
-    <section class="section" id="shared-purpose">
-      <div class="section-heading">
-        <span class="section-number">02 · Shared Purpose</span>
-        <h2>What we are working toward.</h2>
-      </div>
-      <div class="grid">        
-        <article class="card">
+      <details class="charter-item" id="shared-purpose">
+        <summary>02 · Shared Purpose</summary>
+        <div class="charter-content">
           <h3>What success looks like</h3>
-          <p>good team work in communication and come up with a good outcome. Providing good service to the coffee shop. Getting experience for our future jobs from this project.</p>
-        </article>
-      </div>    
-    </section>
+          <p>Good teamwork and communication, a good outcome, providing good service to the coffee shop, and gaining experience for our future jobs.</p>
+        </div>
+      </details>
 
-    <section class="section" id="communication">
-      <div class="section-heading">
-        <span class="section-number">03 · Communication</span>
-        <h2>How we stay connected.</h2>
-      </div>
-      <div class="grid">
-        <article class="card">
+      <details class="charter-item" id="communication">
+        <summary>03 · Communication</summary>
+        <div class="charter-content">
           <h3>Platform</h3>
           <p>Microsoft Teams and Messages, Discord.</p>
-        </article>
-        <article class="card">
           <h3>Response time</h3>
           <p>10 hours max.</p>
-        </article>
-        <article class="card wide accent">
           <h3>Meetings</h3>
-          <p>every Thursday before class.</p>
-        </article>
-      </div>
-    </section>
+          <p>Every Thursday before class.</p>
+        </div>
+      </details>
 
-    <section class="section" id="decision-making">
-      <div class="section-heading">
-        <span class="section-number">04 · Decision-Making</span>
-        <h2>How we move forward.</h2>
-      </div>
-      <div class="grid">
-        <article class="card">
+      <details class="charter-item" id="decision-making">
+        <summary>04 · Decision-Making</summary>
+        <div class="charter-content">
           <h3>How decisions are made</h3>
-          <p>all of us together will agree.</p>
-        </article>
-        <article class="card">
+          <p>All of us together will agree.</p>
           <h3>How disagreements are handled</h3>
-          <p>we will communicate and talk to each other.</p>
-        </article>
-      </div>
-    </section>
+          <p>We will communicate and talk to each other.</p>
+        </div>
+      </details>
 
-    <section class="section" id="agreements">
-      <div class="section-heading">
-        <span class="section-number">05 · Working Agreements</span>
-        <h2>How we work together.</h2>
-      </div>
-      <div class="grid">
-        <article class="card">
+      <details class="charter-item" id="agreements">
+        <summary>05 · Working Agreements</summary>
+        <div class="charter-content">
           <h3>Participation</h3>
-          <p>everyone taking turns to participate.</p>
-        </article>
-        <article class="card">
+          <p>Everyone takes turns participating.</p>
           <h3>Accountability</h3>
-          <p>we will have meetings to evaluate our progress.</p>
-        </article>
-        <article class="card wide accent">
+          <p>We will have meetings to evaluate our progress.</p>
           <h3>Deadlines</h3>
-          <p>we would schedule them write them down.</p>
-        </article>
-      </div>
-    </section>
+          <p>We will schedule them and write them down.</p>
+        </div>
+      </details>
 
-    <section class="section" id="conflict">
-      <div class="section-heading">
-        <span class="section-number">06 · Conflict Resolution</span>
-        <h2>How we handle concerns.</h2>
-      </div>
-      <div class="grid">
-        <article class="card">
+      <details class="charter-item" id="conflict">
+        <summary>06 · Conflict Resolution</summary>
+        <div class="charter-content">
           <h3>Unresponsive teammate</h3>
-          <p>we will talk to him first then talk to professor.</p>
-        </article>
-        <article class="card">
+          <p>We will talk to them first, then talk to the professor.</p>
           <h3>How concerns are raised</h3>
-          <p>We Will send a message asking for help.</p>
-        </article>
-        <article class="card wide">
+          <p>We will send a message asking for help.</p>
           <h3>When to involve the instructor</h3>
-          <p>once a teammate refuses to cooperate.</p>
-        </article>
-      </div>
-    </section>
+          <p>Once a teammate refuses to cooperate.</p>
+        </div>
+      </details>
 
-    <section class="closing" id="success">
-      <span class="eyebrow">07 · Success Metrics</span>
-      <h2>What success means to us.</h2>
-      <div class="grid">
-        <article class="card">
+      <details class="charter-item" id="success">
+        <summary>07 · Success Metrics</summary>
+        <div class="charter-content">
           <h3>What will make us proud</h3>
-          <p>we will be proud once we get a good grace and we succeed with our project.</p>
-        </article>
-        <article class="card">
+          <p>We will be proud once we get a good grade and succeed with our project.</p>
           <h3>Behaviors that define success</h3>
           <p>Everyone is proud because they did their best.</p>
-        </article>
-      </div>
-    </section>
-
+        </div>
+      </details>
+    </article>
+  </div>
+</section>
     <footer>
       Expresso Team · CIS 5040 - Human-Centered Design · Team Charter
     </footer>
