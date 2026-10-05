@@ -377,6 +377,32 @@
     .charter-content p {
       margin: 0 0 12px;
     }
+    .process-map-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: white;
+}
+
+.process-map-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.process-map-note {
+  margin-top: 12px !important;
+  color: var(--muted);
+  font-size: .9rem !important;
+}
+
+@media (max-width: 700px) {
+  .process-map-image {
+    width: 1100px;
+    max-width: none;
+  }
+}
+    
   </style>
 </head>
 
@@ -389,6 +415,7 @@
         <a href="#client-overview">Client Overview</a>
         <a href="#goal-scope">Goal &amp; Scope</a>
         <a href="#client-interview">Client Interview</a>
+        <a href="#process-map">Process Map</a>
         <a href="#sidoh-personas">Sidoh Team Personas</a> 
         <a href="#identity">Team Charter</a>
       </div>
@@ -462,7 +489,43 @@
     </article>
   </div>
 </section>
+ <section class="section" id="process-map">
+  <div class="section-heading">
+    <span class="section-number">Process Map</span>
+    <h2>Finding new coffee shops.</h2>
+  </div>
 
+  <div class="grid">
+    <article class="card wide">
+      <p class="process-map-note" style="margin: 0 0 18px !important;">
+        Our process for finding coffee shops in the Los Angeles area,
+        evaluating potential wholesale customers, reaching out, and recording
+        each result.
+      </p>
+
+      <div
+        class="process-map-scroll"
+        tabindex="0"
+        role="region"
+        aria-label="Process map. Scroll horizontally to view the full diagram."
+      >
+        <a href="images/process-map.jpg" target="_blank" rel="noopener">
+          <img
+            class="process-map-image"
+            src="images/process-map.jpg"
+            alt="Process for researching coffee shops, collecting business information, evaluating potential customers, reaching out, following up, and recording each result."
+          >
+        </a>
+      </div>
+
+      <p class="process-map-note">
+        On a small screen, scroll sideways to see the full map. Select the map
+        to open the full-size image.
+      </p>
+    </article>
+  </div>
+</section>
+    
     <section class="section" id="sidoh-personas">
   <div class="section-heading">
     <span class="section-number">Sidoh Cafe</span>
