@@ -402,7 +402,63 @@
     max-width: none;
   }
 }
-    
+   .sidoh-project-card {
+  overflow: hidden;
+  padding: 0;
+}
+
+.sidoh-project-preview {
+  display: block;
+  overflow: hidden;
+  background: #f7f1e8;
+  border-bottom: 1px solid var(--border);
+}
+
+.sidoh-project-preview svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 220ms ease;
+}
+
+.sidoh-project-preview:hover svg,
+.sidoh-project-preview:focus-visible svg {
+  transform: scale(1.025);
+}
+
+.sidoh-project-copy {
+  padding: 26px 28px 30px;
+}
+
+.sidoh-project-copy p {
+  margin: 0 0 20px;
+  color: var(--muted);
+}
+
+.sidoh-open-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--burgundy);
+  color: var(--ivory);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.sidoh-open-link:hover,
+.sidoh-open-link:focus-visible {
+  background: var(--burgundy-dark);
+  outline: 3px solid var(--blush);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sidoh-project-preview svg {
+    transition: none;
+  }
+} 
   </style>
 </head>
 
@@ -701,6 +757,94 @@
     </article>
   </div>
 </section>
+    <section class="section" id="sidoh-cafe-site">
+  <div class="section-heading">
+    <span class="section-number">Prototype</span>
+    <h2>Sidoh Café Website</h2>
+  </div>
+
+  <div class="grid">
+    <article class="card wide sidoh-project-card">
+      <a
+        class="sidoh-project-preview"
+        href="https://jhavard23-creator.github.io/sido-cafe/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Open the Sidoh Café website"
+      >
+        <svg
+          viewBox="0 0 1200 560"
+          role="img"
+          aria-label="Preview of the Sidoh Café home page"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="1200" height="560" fill="#f7f1e8" />
+          <rect width="1200" height="66" fill="#211a1d" />
+
+          <text x="44" y="43" fill="#edc6ac"
+                font-family="Georgia, serif" font-size="27">S</text>
+          <text x="78" y="42" fill="#fffdf9"
+                font-family="Georgia, serif" font-size="23">Sidoh Café</text>
+
+          <g fill="#e5dcda" font-family="Arial, sans-serif" font-size="15">
+            <text x="650" y="40">Home</text>
+            <text x="730" y="40">Who We Are</text>
+            <text x="855" y="40">Our Mission</text>
+            <text x="980" y="40">Products</text>
+            <text x="1070" y="40">Survey</text>
+          </g>
+
+          <text x="90" y="150" fill="#6e3f54"
+                font-family="Arial, sans-serif" font-size="14">
+            A NEIGHBORHOOD CAFÉ FOR EVERY KIND OF DAY
+          </text>
+          <text x="86" y="247" fill="#211a1d"
+                font-family="Georgia, serif" font-size="76">Welcome to</text>
+          <text x="86" y="332" fill="#6e3f54"
+                font-family="Georgia, serif" font-size="76" font-style="italic">
+            Sidoh Café.
+          </text>
+          <text x="90" y="390" fill="#211a1d"
+                font-family="Georgia, serif" font-size="27">
+            Where coffee brings people together.
+          </text>
+          <text x="90" y="430" fill="#766d6d"
+                font-family="Arial, sans-serif" font-size="17">
+            Come in for your favorite cup, stay for the conversation.
+          </text>
+
+          <circle cx="880" cy="310" r="175" fill="#eddfd0" />
+          <path d="M765 270 Q765 250 790 250 H970 Q995 250 995 275 L980 375 Q975 410 940 410 H820 Q785 410 780 375 Z"
+                fill="#fbf8f1" stroke="#795a54" stroke-width="6" />
+          <path d="M993 280 H1030 Q1070 280 1070 320 Q1070 360 995 355"
+                fill="none" stroke="#795a54" stroke-width="13" />
+          <text x="880" y="355" text-anchor="middle" fill="#6e3f54"
+                font-family="Georgia, serif" font-size="82">♡</text>
+          <ellipse cx="882" cy="430" rx="190" ry="22"
+                   fill="#e8d5c9" stroke="#795a54" stroke-width="7" />
+          <rect y="536" width="1200" height="24" fill="#6e3f54" />
+        </svg>
+      </a>
+
+      <div class="sidoh-project-copy">
+        <h3>Explore the Sidoh Café website</h3>
+        <p>
+          Visit the café site to explore its story, mission, menu,
+          and a short customer survey.
+        </p>
+        <a
+          class="sidoh-open-link"
+          href="https://jhavard23-creator.github.io/sido-cafe/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open Site <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </article>
+  </div>
+</section>
+    
     <footer>
       Expresso Team · CIS 5040 - Human-Centered Design · Team Charter
     </footer>
