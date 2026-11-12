@@ -909,88 +909,109 @@
       <div class="grid">
         <article class="card wide">
           <h3>The Weekly Status Report</h3>
-          <div style="display: flex; flex-wrap: wrap; gap: 24px; margin: 8px 0 18px;">
-            <div style="flex: 0 1 44%; min-width: 230px; padding: 16px 26px; background: var(--ivory); border: 1px solid var(--border); border-radius: 16px;">
-              <p><strong style="color: var(--burgundy);">Reporting Period</strong><br>Week 10</p>
-            </div>
-            <div style="flex: 0 1 44%; min-width: 230px; padding: 16px 26px; background: var(--ivory); border: 1px solid var(--border); border-radius: 16px;">
-              <p><strong style="color: var(--burgundy);">Report Author</strong><br>Claire</p>
-            </div>
+          <style>
+            #weekly-status-reports .report-tabs { display:flex; gap:10px; margin:8px 0 18px; border-bottom:1px solid var(--border); }
+            #weekly-status-reports .report-tab { appearance:none; border:1px solid var(--border); border-bottom:0; border-radius:12px 12px 0 0; padding:11px 20px; background:var(--ivory); color:var(--burgundy); font:inherit; font-weight:700; cursor:pointer; }
+            #weekly-status-reports .report-tab[aria-selected="true"] { background:var(--burgundy); color:var(--ivory); }
+            #weekly-status-reports .report-tab:focus-visible { outline:3px solid var(--burgundy); outline-offset:3px; }
+            #weekly-status-reports .report-panel[hidden] { display:none; }
+            #weekly-status-reports .report-meta { display:flex; flex-wrap:wrap; gap:24px; margin:8px 0 18px; }
+            #weekly-status-reports .report-meta-card { flex:0 1 44%; min-width:230px; padding:16px 26px; background:var(--ivory); border:1px solid var(--border); border-radius:16px; }
+            #weekly-status-reports .principle-list { padding-left:24px; }
+            #weekly-status-reports .principle-list li { margin:8px 0; }
+            @media (max-width:560px) { #weekly-status-reports .report-meta-card { flex-basis:100%; } }
+          </style>
+          <div class="report-tabs" role="tablist" aria-label="Select weekly status report">
+            <button class="report-tab" id="report-tab-10" type="button" role="tab" aria-selected="true" aria-controls="report-panel-10" tabindex="0">Week 10</button>
+            <button class="report-tab" id="report-tab-11" type="button" role="tab" aria-selected="false" aria-controls="report-panel-11" tabindex="-1">Week 11</button>
           </div>
-          <details class="charter-item" open>
-            <summary>Week 10 · Team report</summary>
-            <div class="charter-content">
-              <p><strong>Project health:</strong> On track</p>
-              <details class="charter-item">
-                <summary>Project goal and executive summary</summary>
-                <div class="charter-content">
-                  <h3>Project goal</h3>
-                  <p>Use demographic and community data to analyze potential areas where a new coffee shop could be successful. Build community connections and develop new partnerships. Use digital marketing, such as a website and social media, and traditional marketing, such as a flyer, to promote the business.</p>
-                  <h3>Executive summary</h3>
-                  <p>The project is on track because we continue analyzing demographic and community data through surveys and interviews to identify promising areas for a new coffee shop. We are also developing the website, planning social media content, and creating a flyer to raise awareness of our client. After gathering enough customer responses and feedback, we will begin producing our marketing materials.</p>
-                </div>
-              </details>
-              <details class="charter-item">
-                <summary>Accomplishments this week</summary>
-                <div class="charter-content">
-                  <ul>
-                    <li>Surveyed local people for feedback and suggestions — Claire</li>
-                    <li>Developed the website — John</li>
-                    <li>Contacted the client with an update and gathered feedback — Karen</li>
-                    <li>Planned social media content — Kevin</li>
-                  </ul>
-                </div>
-              </details>
-              <details class="charter-item">
-                <summary>Plan for next week</summary>
-                <div class="charter-content">
-                  <ul>
-                    <li>Interview customers at other local coffee shops about their preferences — Karen</li>
-                    <li>Continue updating the survey questions — Claire</li>
-                    <li>Improve the website design and menu — John</li>
-                    <li>Draft a promotional flyer — Kevin</li>
-                  </ul>
-                </div>
-              </details>
-              <details class="charter-item">
-                <summary>Client interactions</summary>
-                <div class="charter-content">
-                  <p>We met virtually on Saturday to discuss the survey results, the first draft of our social media and website content, and the client’s expectations for finding new coffee bean customers, including locations and shipping fees.</p>
-                </div>
-              </details>
-              <details class="charter-item">
-                <summary>Issues, Risks &amp; Blockers</summary>
-                <div class="charter-content">
-                  <h3>Risks</h3>
-                  <p>Some local coffee shops are focusing on trendy drinks like matcha and juice instead of coffee. Others may already have long-term coffee bean suppliers that offer good delivery service and prices.</p>
-                  <h3>Blockers</h3>
-                  <p>None</p>
-                </div>
-              </details>
-              <details class="charter-item">
-                <summary>Design principles check-in</summary>
-                <div class="charter-content">
-                  <ol>
-                    <li><span style="color: var(--burgundy); font-weight: 800;">✓</span> Design meaningful systems</li>
-                    <li><span style="color: var(--burgundy); font-weight: 800;">✓</span> User-first design</li>
-                    <li><span style="color: var(--burgundy); font-weight: 800;">✓</span> Remember the why</li>
-                    <li><span style="color: var(--burgundy); font-weight: 800;">✓</span> Everything on the screen is intentional</li>
-                    <li><span style="color: var(--burgundy); font-weight: 800;">✓</span> Accessibility as a foundation</li>
-                    <li><span style="color: var(--burgundy); font-weight: 800;">✓</span> Look, presentation, and content</li>
-                    <li><span style="color: var(--burgundy); font-weight: 800;">✓</span> Consistency</li>
-                    <li><span style="color: var(--burgundy); font-weight: 800;">✓</span> Error prevention and recovery</li>
-                    <li><span style="color: var(--burgundy); font-weight: 800;">✓</span> Creative exploration</li>
-                  </ol>
-                </div>
-              </details>
-              <details class="charter-item">
-                <summary>Team reflection</summary>
-                <div class="charter-content">
-                  <p>We learned that to find a strong position in the market, we need to focus on what customers want and what benefits will help us stand out from competitors.</p>
-                </div>
-              </details>
+          <div class="report-panel" id="report-panel-10" role="tabpanel" aria-labelledby="report-tab-10">
+            <div class="report-meta">
+              <div class="report-meta-card"><p><strong style="color: var(--burgundy);">Reporting Period</strong><br>Week 10</p></div>
+              <div class="report-meta-card"><p><strong style="color: var(--burgundy);">Report Author</strong><br>Claire</p></div>
             </div>
-          </details>
+            <details class="charter-item" open>
+              <summary>Week 10 · Team report</summary>
+              <div class="charter-content">
+                <p><strong>Project health:</strong> On track</p>
+                <details class="charter-item"><summary>Project goal and executive summary</summary><div class="charter-content">
+                  <h3>Project goal</h3><p>Use demographic and community data to analyze potential areas where a new coffee shop could be successful. Build community connections and develop new partnerships. Use digital marketing, such as a website and social media, and traditional marketing, such as a flyer, to promote the business.</p>
+                  <h3>Executive summary</h3><p>The project is on track because we continue analyzing demographic and community data through surveys and interviews to identify promising areas for a new coffee shop. We are also developing the website, planning social media content, and creating a flyer to raise awareness of our client. After gathering enough customer responses and feedback, we will begin producing our marketing materials.</p>
+                </div></details>
+                <details class="charter-item"><summary>Accomplishments this week</summary><div class="charter-content"><ul>
+                  <li>Surveyed local people for feedback and suggestions — Claire</li><li>Developed the website — John</li><li>Contacted the client with an update and gathered feedback — Karen</li><li>Planned social media content — Kevin</li>
+                </ul></div></details>
+                <details class="charter-item"><summary>Plan for next week</summary><div class="charter-content"><ul>
+                  <li>Interview customers at other local coffee shops about their preferences — Karen</li><li>Continue updating the survey questions — Claire</li><li>Improve the website design and menu — John</li><li>Draft a promotional flyer — Kevin</li>
+                </ul></div></details>
+                <details class="charter-item"><summary>Client interactions</summary><div class="charter-content"><p>We met virtually on Saturday to discuss the survey results, the first draft of our social media and website content, and the client’s expectations for finding new coffee bean customers, including locations and shipping fees.</p></div></details>
+                <details class="charter-item"><summary>Issues, Risks &amp; Blockers</summary><div class="charter-content"><h3>Risks</h3><p>Some local coffee shops are focusing on trendy drinks like matcha and juice instead of coffee. Others may already have long-term coffee bean suppliers that offer good delivery service and prices.</p><h3>Blockers</h3><p>None</p></div></details>
+                <details class="charter-item"><summary>Design principles check-in</summary><div class="charter-content"><ol>
+                  <li><span style="color: var(--burgundy); font-weight: 800;">✓</span> Design meaningful systems</li><li><span style="color: var(--burgundy); font-weight: 800;">✓</span> User-first design</li><li><span style="color: var(--burgundy); font-weight: 800;">✓</span> Remember the why</li><li><span style="color: var(--burgundy); font-weight: 800;">✓</span> Everything on the screen is intentional</li><li><span style="color: var(--burgundy); font-weight: 800;">✓</span> Accessibility as a foundation</li><li><span style="color: var(--burgundy); font-weight: 800;">✓</span> Look, presentation, and content</li><li><span style="color: var(--burgundy); font-weight: 800;">✓</span> Consistency</li><li><span style="color: var(--burgundy); font-weight: 800;">✓</span> Error prevention and recovery</li><li><span style="color: var(--burgundy); font-weight: 800;">✓</span> Creative exploration</li>
+                </ol></div></details>
+                <details class="charter-item"><summary>Team reflection</summary><div class="charter-content"><p>We learned that to find a strong position in the market, we need to focus on what customers want and what benefits will help us stand out from competitors.</p></div></details>
+              </div>
+            </details>
+          </div>
+          <div class="report-panel" id="report-panel-11" role="tabpanel" aria-labelledby="report-tab-11" hidden>
+            <div class="report-meta">
+              <div class="report-meta-card"><p><strong style="color: var(--burgundy);">Reporting Period</strong><br>Week 11</p></div>
+              <div class="report-meta-card"><p><strong style="color: var(--burgundy);">Report Author</strong><br>Kevin Vega</p></div>
+            </div>
+            <details class="charter-item" open>
+              <summary>Week 11 · Team report</summary>
+              <div class="charter-content">
+                <p><strong>Project health:</strong> On track</p>
+                <details class="charter-item"><summary>Project goal and executive summary</summary><div class="charter-content">
+                  <h3>Project goal</h3><p>The goal is to use demographic and community data to analyze potential areas where a new coffee shop could be successful. Build community connections and develop new partnerships. Use digital marketing such as a website and social media and traditional marketing such as a flyer to promote the business.</p>
+                  <h3>Executive summary</h3><p>The project is on track. We are making sure the website and survey questions are updated as needed based on information we gather from coffee shops and local people. We will continue to find and gather data from the community and local coffee shops.</p>
+                </div></details>
+                <details class="charter-item"><summary>Accomplishments this week</summary><div class="charter-content"><ul>
+                  <li>Updated the survey questions — Claire</li><li>Improved the website’s design and menu — John</li><li>Interviewed local coffee shops about their clients and preferences — Karen</li><li>Drafted a promotional flyer — Kevin</li>
+                </ul></div></details>
+                <details class="charter-item"><summary>Plan for next week</summary><div class="charter-content"><ul>
+                  <li>Contact the client with an update and get feedback — Karen</li><li>Continue updating the survey — Claire</li><li>Improve the website’s design and menu based on the SME activity — John</li><li>Gather data from locals and coffee shops for feedback and improvements — Kevin</li>
+                </ul></div></details>
+                <details class="charter-item"><summary>Client interactions</summary><div class="charter-content"><p>None this week</p></div></details>
+                <details class="charter-item"><summary>Issues, Risks &amp; Blockers</summary><div class="charter-content">
+                  <h3>Risks</h3><p>Some local coffee shops focus on trendy drinks like matcha and juice instead of coffee. Others may already have long-term coffee bean suppliers with good delivery service and prices.</p>
+                  <h3>Blockers</h3><p>None</p>
+                </div></details>
+                <details class="charter-item"><summary>Design principles check-in</summary><div class="charter-content">
+                  <p>No principles were selected for this week.</p>
+                  <ul class="principle-list">
+                    <li><input type="checkbox" disabled> Design meaningful systems</li><li><input type="checkbox" disabled> User-first design</li><li><input type="checkbox" disabled> Remember the why</li><li><input type="checkbox" disabled> Everything on the screen is intentional</li><li><input type="checkbox" disabled> Accessibility as a foundation</li><li><input type="checkbox" disabled> Look, presentation, and content</li><li><input type="checkbox" disabled> Consistency</li><li><input type="checkbox" disabled> Error prevention and recovery</li><li><input type="checkbox" disabled> Creative exploration</li>
+                  </ul>
+                </div></details>
+                <details class="charter-item"><summary>Team reflection</summary><div class="charter-content"><p>We learned to use other people’s opinions to help create what we think is good for the community. These suggestions help us create a website and survey that people can understand.</p></div></details>
+              </div>
+            </details>
+          </div>
+          <script>
+            (() => {
+              const tabs = Array.from(document.querySelectorAll('#weekly-status-reports [role="tab"]'));
+              const panels = tabs.map(tab => document.getElementById(tab.getAttribute('aria-controls')));
+              function activate(index, moveFocus = false) {
+                tabs.forEach((tab, i) => {
+                  const selected = i === index;
+                  tab.setAttribute('aria-selected', String(selected));
+                  tab.tabIndex = selected ? 0 : -1;
+                  panels[i].hidden = !selected;
+                });
+                if (moveFocus) tabs[index].focus();
+              }
+              tabs.forEach((tab, index) => tab.addEventListener('click', () => activate(index)));
+              tabs.forEach((tab, index) => tab.addEventListener('keydown', event => {
+                let next = index;
+                if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
+                else if (event.key === 'ArrowLeft') next = (index + tabs.length - 1) % tabs.length;
+                else if (event.key === 'Home') next = 0;
+                else if (event.key === 'End') next = tabs.length - 1;
+                else return;
+                event.preventDefault(); activate(next, true);
+              }));
+            })();
+          </script>
         </article>
       </div>
     </section>
